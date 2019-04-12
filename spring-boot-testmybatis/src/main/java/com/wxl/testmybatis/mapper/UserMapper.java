@@ -12,7 +12,7 @@ import org.apache.ibatis.annotations.Update;
 import com.wxl.testmybatis.pojo.User;
 
 public interface UserMapper {
-	@Select("select id,name,email from user")
+	@Select("select id,name,email from user where 1=1")
 	@Results({
 		@Result(property = "id", column = "id"),
 		@Result(property = "name", column = "name"),
